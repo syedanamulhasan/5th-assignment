@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         *{
@@ -18,26 +19,65 @@
     </style>
 </head>
 <body>
-    <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+  <div class="sticky top-0 z-10 bg-white opacity-95">
+    <div class=" w-full bg-[#f3f4f6] ">
+        <div class="navbar w-4/5 mx-auto py-10">
+        
+            <div class="navbar-start">
+              
+              <a class="bg-[#a3e635] px-4 py-2 rounded-2xl font-semibold text-xl" href="index.html">Home</a>
+            </div>
+            <div class="navbar-center lg:flex hidden items-center gap-4">
+                <img src="assets/logo.png" alt="">
+              <p class="font-bold">Donate Bangladesh</p>
+            </div>
+            <div class="navbar-end gap-2">
+                <img src="assets/coin.png" alt="">
+                <p id="reduced-amount">5500 BDT</span></p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <!-- faq section -->
+    <section class="w-4/5 mx-auto mt-12">
+      <div class="flex items-center gap-4 ">
+        <h1 class="lg:text-6xl text-4xl font-bold">Important FAQ</h1>
+      <i class="fa-regular fa-circle-question lg:text-4xl text-3xl text-[#6b7280]"></i>
+      </div>
+      <div class="mt-12">
+        <div class="collapse collapse-arrow bg-base-200 border-2 border-gray-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-2xl font-semibold">What is the Document Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p>Data representation of the objects that comprise the structure and content of a document on the web.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 border-2 border-gray-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-semibold">How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p>by using its ID attribute</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 border-2 border-gray-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-semibold">What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 border-2 border-gray-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-semibold">How do you manipulate an element's attributes and styles using the DOM?</div>
+          <div class="collapse-content">
+            <p>By using setAttributes. we can also use the style property and set its value for styling the elements.</p>
+          </div>
         </div>
       </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
+    </section>
+    <script src="js/blog.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/function.js"></script>
 </body>
 </html>
