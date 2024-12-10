@@ -5,7 +5,10 @@ document.getElementById('noakhali-flood-donation').addEventListener('click',func
     const reducedAmount = floodDonationTotalAmount('reduced-amount');
     const newReducedAmount = reducedAmount - amount;
     if(amount <= 0 || newReducedAmount <=0 || isNaN(amount)){
+        // document.getElementById('noakhali-flood-donation').onclick = null;
+        
         alert('failed to donate');
+        return
               
     }
     else{
@@ -23,6 +26,7 @@ document.getElementById('noakhali-flood-donation').addEventListener('click',func
         `
         document.getElementById('history-page').appendChild(div); 
     }
+    
     
 })
 //2
