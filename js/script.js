@@ -5,18 +5,12 @@ document.getElementById('noakhali-flood-donation').addEventListener('click',func
     const reducedAmount = floodDonationTotalAmount('reduced-amount');
     const newReducedAmount = reducedAmount - amount;
     if(amount <= 0 || newReducedAmount <=0 || isNaN(amount)){
-        // document.getElementById('noakhali-flood-donation').onclick = null;
-        
         alert('failed to donate');
-        return
-              
+        return;        
     }
     else{
         document.getElementById('total-flood-donation').innerText =  amount + totalAmount +" " + "BDT";
         document.getElementById('reduced-amount').innerText = newReducedAmount +" " + "BDT";
-        const modal = document.getElementById('my_modal_1');
-        modal.classList.remove('hidden');
-        // modal.classList.remove("hidden")
         const text = document.getElementById('flood-text').innerText;
         const div= document.createElement('div');
         div.classList.add ("border-2","rounded-lg","p-2");
@@ -44,8 +38,6 @@ document.getElementById('feni-flood-donation').addEventListener('click',function
     else{
         document.getElementById('feni-total-amount').innerText =  feniAmount + feniTotalAmount +" " + "BDT";
         document.getElementById('reduced-amount').innerText = newReducedAmount +" " + "BDT";
-        // const modal = document.getElementById('my_modal_1');
-        // modal.classList.remove("hidden")
         const feniText = document.getElementById('feni-flood').innerText;
         const div= document.createElement('div');
         div.classList.add ("border-2","rounded-lg","p-2");
@@ -54,10 +46,7 @@ document.getElementById('feni-flood-donation').addEventListener('click',function
         <p class="bg-[#f3f4f6] rounded-lg p-2 my-4 ml-2">${new Date()}</p>
         `
         document.getElementById('history-page').appendChild(div); 
-    }
-    
-
-    
+    } 
 })
 //3
 document.getElementById('quota-protest-donation').addEventListener('click',function(event){
@@ -84,6 +73,4 @@ document.getElementById('quota-protest-donation').addEventListener('click',funct
         `
         document.getElementById('history-page').appendChild(div); 
     }
-   
-
 })
